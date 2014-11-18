@@ -1,9 +1,13 @@
 name: wercker-box-mt
 version: 0.0.1
-inherits: wercker/default
+inherits: wercker/ubuntu12.04-webessentials
 type: main
 platform: ubuntu@12.04
-description: Wercker box for movable type.
-
+description: wercker box for movable type.
+#keywords:
+#  - perl
+#  - perl5
 script: |
   sudo apt-get update -y
+#env:
+#  PATH: "/opt/perl-5.18/bin:$PATH"
