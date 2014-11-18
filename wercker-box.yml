@@ -1,12 +1,11 @@
-name: wercker-box-mt
+name: testboxmt
 version: 0.0.1
-inherits: wercker/ubuntu12.04-webessentials
-type: main
+inherits: wercker/ubuntu12.04-webessentials@0.0.3
+type: language
 platform: ubuntu@12.04
-description: wercker box for movable type.
+description: Say hello world
 keywords:
-  - movabletype
+  - hello
 script: |
   sudo apt-get update -y
-env:
-  PATH: "/opt/perl-5.18/bin:$PATH"
+  sudo apt-get install -y hello
