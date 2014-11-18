@@ -1,11 +1,11 @@
-name: wrecker-box-mt
+name: wercker-box-mt
 version: 0.0.1
 inherits: wercker/default
 type: main
 platform: ubuntu@12.04
 description: Wercker box for movable type.
 keywords:
-  - movable type
+  - movabletype
 
 packages:
   - imagemagick
@@ -18,4 +18,3 @@ script: |
   sudo cpanm -n Crypt::CBC
   curl -O https://raw.githubusercontent.com/masiuchi/movabletype/wercker/t/cpanfile
   sudo cpanm -n --installdeps . --cpanfile ./t/cpanfile
-
