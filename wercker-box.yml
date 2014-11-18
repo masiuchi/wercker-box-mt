@@ -1,0 +1,10 @@
+name: wrecker-box-mt
+version: 0.0.1
+inherits: wercker/default
+type: main
+platform: ubuntu@12.04
+description: Wercker box for movable type.
+
+script: |
+  sudo apt-get update -y
+
