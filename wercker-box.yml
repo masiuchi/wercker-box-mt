@@ -4,6 +4,8 @@ inherits: wercker/default
 type: main
 platform: ubuntu@12.04
 description: Wercker box for movable type.
+keywords:
+  - movable type
 
 packages:
   - imagemagick
