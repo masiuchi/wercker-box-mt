@@ -1,5 +1,5 @@
 name: wercker-box-mt
-version: 0.0.3
+version: 0.0.4
 inherits: wercker/ubuntu12.04-webessentials@1.0.4
 type: language
 platform: ubuntu@12.04
@@ -8,7 +8,7 @@ description: wercker box for movable type
 script: |
   sudo apt-get update -y
 
-  sudo apt-get install libdb-dev libgd2-xpm-dev libgmp3-dev libperl-dev php5 php5-mysql php5-gd libpng12-dev libgif-dev libjpeg-dev
+  sudo apt-get install libdb-dev libgd2-xpm-dev libgmp3-dev libperl-dev php5 php5-mysql php5-gd libpng12-dev libgif-dev libjpeg-dev perlmagick
 
   curl -L https://cpanmin.us | perl - --sudo App::cpanminus
 
