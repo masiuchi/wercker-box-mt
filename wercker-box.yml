@@ -4,9 +4,8 @@ inherits: wercker/ubuntu12.04-webessentials
 type: main
 platform: ubuntu@12.04
 description: wercker box for movable type.
-#keywords:
-#  - perl
-#  - perl5
+keywords:
+  - movabletype
 script: |
   sudo apt-get update -y
 env:
