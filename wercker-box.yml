@@ -1,8 +1,16 @@
 name: wercker-box-mt
-version: 0.0.2
-inherits: wercker/ubuntu12.04-webessentials@0.0.3
+version: 0.0.3
+inherits: wercker/ubuntu12.04-webessentials
 type: language
 platform: ubuntu@12.04
 description: wercker box for movable type
+
 script: |
   sudo apt-get update -y
+
+  curl -L https://cpanmin.us | perl - --sudo App::cpanminus
+
+  curl -O https://raw.githubusercontent.com/movabletype/movabletype/develop/t/cpanfile
+
+  sudo cpanm -n Crypt::CBC
+  sudo cpanm -n --installdeps .
