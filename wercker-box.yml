@@ -8,7 +8,7 @@ description: wercker box for movable type
 script: |
   sudo apt-get update -y
 
-  sudo apt-get install libgd
+  sudo apt-get install libgd-tools
 
   curl -L https://cpanmin.us | perl - --sudo App::cpanminus
 
