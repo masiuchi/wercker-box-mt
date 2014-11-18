@@ -9,5 +9,5 @@ description: wercker box for movable type.
 #  - perl5
 script: |
   sudo apt-get update -y
-#env:
-#  PATH: "/opt/perl-5.18/bin:$PATH"
+env:
+  PATH: "/opt/perl-5.18/bin:$PATH"
