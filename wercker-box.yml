@@ -8,6 +8,8 @@ description: wercker box for movable type
 script: |
   sudo apt-get update -y
 
+  sudo apt-get install libgd
+
   curl -L https://cpanmin.us | perl - --sudo App::cpanminus
 
   curl -O https://raw.githubusercontent.com/movabletype/movabletype/develop/t/cpanfile
