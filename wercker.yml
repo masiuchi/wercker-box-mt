@@ -5,5 +5,5 @@ build:
     - script:
        name: install
        code: |
-         ./install.sh
+         sh ./install.sh
 
