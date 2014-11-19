@@ -8,6 +8,6 @@ curl -L https://cpanmin.us | perl - --sudo App::cpanminus
 
 curl -O https://raw.githubusercontent.com/movabletype/movabletype/develop/t/cpanfile
 
-sudo cpanm -n Crypt::CBC
-sudo cpanm -n --installdeps .
+sudo cpanm Crypt::CBC
+sudo cpanm --installdeps .
 
