@@ -1,0 +1,8 @@
+box: wercker/ubuntu12.04-webessentials@1.0.4
+
+build:
+  steps:
+    - script: |
+       name: install
+       code: ./install.sh
+
