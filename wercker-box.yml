@@ -6,4 +6,4 @@ platform: ubuntu@12.04
 description: Wercker box for Movable Type.
 
 script: |
-  ./install.sh
+  sh ./install.sh
