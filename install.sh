@@ -10,4 +10,4 @@ curl -O https://raw.githubusercontent.com/movabletype/movabletype/develop/t/cpan
 
 sudo cpanm Crypt::CBC
 sudo cpanm --installdeps .
-
+sudo cpanm Clone
