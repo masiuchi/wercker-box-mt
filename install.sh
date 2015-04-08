@@ -8,6 +8,9 @@ curl -L https://cpanmin.us | perl - --sudo App::cpanminus
 
 curl -O https://raw.githubusercontent.com/movabletype/movabletype/develop/t/cpanfile
 
+# install CPAN modules in cpanfile.
 sudo cpanm Crypt::CBC
 sudo cpanm --installdeps .
-sudo cpanm Clone
+
+# install CPAN modules for test.
+sudo cpanm Clone DateTime DateTime::TimeZone
