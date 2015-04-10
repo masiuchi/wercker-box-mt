@@ -13,4 +13,4 @@ sudo cpanm Crypt::CBC
 sudo cpanm --installdeps .
 
 # install CPAN modules for test.
-sudo cpanm Clone DateTime DateTime::TimeZone
+sudo cpanm Clone DateTime DateTime::TimeZone Test::File
